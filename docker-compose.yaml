@@ -1,0 +1,25 @@
+version: '3'
+services:
+  catalog:
+    build: ./catalog
+    container_name: CatalogService
+    ports:
+      - "5001:5000"
+
+  order:
+    build: ./order
+    container_name: OrderService
+    ports:
+      - "5002:5000"
+
+  front:
+    build: ./front-and-server
+    container_name: FrontService
+    ports:
+      - "5003:5000"
+      
+      
+      
+      
+      
+
